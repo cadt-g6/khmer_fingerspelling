@@ -1,5 +1,5 @@
-output_parent_dir="datasets/split/vowels/PXL_20221005_091907904"
-input_file="datasets/raw/PXL_20221005_091907904.mp4"
+output_parent_dir="datasets/split/vowels/PXL_20221005_045451616"
+input_file="datasets/raw/PXL_20221005_045451616.mp4"
 clips=(
   'ា-00:00:00-00:00:05'
   'ិ-00:00:06-00:00:09'
