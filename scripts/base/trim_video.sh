@@ -2,6 +2,8 @@ output_parent_dir="$1"
 input_file="$2"
 clips=("$@")
 
+mkdir -p $output_parent_dir
+
 function execute() {
   start_time="$1"  # 00:01:00
   end_time="$2"    # 00:02:00
