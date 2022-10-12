@@ -4,9 +4,9 @@ import os
 from extractor_util import *
 
 # variables
-source_video = './././asset/shrinked'
+source_video = './././assets/shrinked'
 char_type = '/consonant'
-framed_path = './././asset/framed'
+framed_path = './././assets/framed'
 
 # read character folder data
 folder_char = []

@@ -5,8 +5,8 @@ from moviepy.editor import *
 from extractor_util import *
 
 # variables
-shrinked_parent_path = './././asset/shrinked'
-source_video_path = './././asset/video'
+shrinked_parent_path = './././assets/shrinked'
+source_video_path = './././assets/video'
 video_extension = '.mp4'
 data_path = './././datasets/csv'
 data_file = '/testing_file.csv'
@@ -38,10 +38,12 @@ for index in range(0, len(df)):
     print("-------", character, '--------')
 
     target_path = shrinked_parent_path + '/' + type + '/' + character
-    ensure_exist(target_path)
+   
+    ensure_dir_exist(target_path)
+    add_readme(target_path, character, index)
 
-    target_name = str(count_file_in_dir(target_path)) + video_extension
-    video_name = source_video_path + '/' + video_name
-    trim_video(video_name, start, stop, target_name, target_path)
+    # target_name = str(count_file_in_dir(target_path)) + video_extension
+    # video_name = source_video_path + '/' + video_name
+    # trim_video(video_name, start, stop, target_name, target_path)
 
     print('----------------------------')
