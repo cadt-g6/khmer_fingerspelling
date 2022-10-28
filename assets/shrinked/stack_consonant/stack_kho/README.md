@@ -1,2 +1,0 @@
-
-stack_kho
