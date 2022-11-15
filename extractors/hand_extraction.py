@@ -8,7 +8,7 @@ from mediapipe.python.solutions import hands
 
 hands = hands.Hands(static_image_mode=True,
                     max_num_hands=2, min_detection_confidence=0.5)
-dataset_path = './extractors/hand_detection/consonants'
+dataset_path = './assets/cleaned_frames/consonants'
 
 
 def listdir(path: str):
@@ -122,7 +122,7 @@ for consonant in listdir(dataset_path):
 
         # save extracted hand images
         try:
-            directory = f'./extractors/cleaned_hand/{consonant}'
+            directory = f'./assets/cropped_hand_frames/consonants/{consonant}'
             if not os.path.exists(directory):
                 os.makedirs(directory)
             cv2.imwrite(
