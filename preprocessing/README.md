@@ -3,9 +3,9 @@ For changing background with Pixellib
 ---------------------------------------
 - Installation:
 
-    pip install tensorflow==2.8
-    pip install imgaug
-    pip install pixellib --upgrade
+    - pip install tensorflow==2.8
+    - pip install imgaug
+    - pip install pixellib --upgrade
 
     Install pixellib model: "xception_pascalvoc.pb" (https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.1/xception_pascalvoc.pb)
 
