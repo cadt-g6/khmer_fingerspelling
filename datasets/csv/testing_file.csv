@@ -1,0 +1,5 @@
+start_at,end_at,start_sec,end_sec,char,latin_char,type,video_name
+ 00:00:00, 00:00:00,,,វ,vo,consonant,PXL_20221005_091137699.mp4
+ 00:00:00, 00:00:00,,,្វ,stack_vo,stack_consonant,PXL_20221005_091137699.mp4
+ 00:00:00, 00:00:00,1,2,វ,vo,consonant,PXL_20221005_091137699.mp4
+ 00:00:00, 00:00:00,4,5,្វ,stack_vo,stack_consonant,PXL_20221005_091137699.mp4

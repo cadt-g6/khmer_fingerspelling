@@ -1,12 +1,14 @@
 import cv2
 import os
 
+from numpy import character
+
 from extractor_util import *
 
 # variables
-source_video = './././assets/shrinked'
-char_type = '/consonant'
-framed_path = './././assets/framed'
+source_video = '../assets/shrinked'
+char_type = '/sub_vowel'
+framed_path = '../assets/framed'
 
 # read character folder data
 folder_char = []
@@ -36,6 +38,12 @@ def extract_frame_from_video(video_name, target_path, fps=30):
 video_names = {}
 for character_folder in folder_char:
     print("--------", character_folder, '--------')
+    if character_folder == 'script.sh':
+        print("Pass the file.....")
+        continue
+    # if character_folder not in ["ta","tha1","tha2","tho1","tho2","to","vo","yo"]:
+    #     print("Pass the file.....")
+    #     continue
     video = []
     with os.scandir(source_video + char_type + '/' + character_folder + '/') as names:
         for name in names:
