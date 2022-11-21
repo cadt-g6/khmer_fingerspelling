@@ -1,8 +1,8 @@
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-from .deeplab import Deeplab_xcep_pascal
-from .deeplab import Deeplab_xcep_ade20k
+from deeplab import Deeplab_xcep_pascal
+from deeplab import Deeplab_xcep_ade20k
 import cv2
 import time
 from datetime import datetime

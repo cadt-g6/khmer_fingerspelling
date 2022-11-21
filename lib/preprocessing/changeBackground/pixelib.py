@@ -1,8 +1,8 @@
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-from .deeplab import Deeplab_xcep_pascal
-from .init import obtain_segmentation
+from deeplab import Deeplab_xcep_pascal
+from init import obtain_segmentation
 # from pixellib.semantic.deeplab import Deeplab_xcep_pascal
 # from pixellib.semantic import obtain_segmentation
 import cv2
