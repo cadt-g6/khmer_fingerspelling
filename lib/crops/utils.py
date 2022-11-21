@@ -4,21 +4,20 @@ import os
 import pathlib
 
 
+# y:y+h, x:x+w
 def write(
-    width_start,
-    width_end,
     height_start,
     height_end,
+    width_start,
+    width_end,
     destination_path,
     consonant,
     variant,
     image,
     id,
 ):
-    print(f'{consonant}/{variant}')
-
-    cropped_image = image[width_start:width_end,
-                          height_start:height_end]
+    cropped_image = image[height_start:height_end,
+                          width_start:width_end]
 
     name, extension = variant.split('.')
     parent_path = f"{destination_path}/{consonant}"
