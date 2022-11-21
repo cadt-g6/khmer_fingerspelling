@@ -11,7 +11,7 @@ def write(
     width_start,
     width_end,
     destination_path,
-    consonant,
+    character,
     variant,
     image,
     id,
@@ -20,9 +20,9 @@ def write(
                           width_start:width_end]
 
     name, extension = variant.split('.')
-    parent_path = f"{destination_path}/{consonant}"
+    parent_path = f"{destination_path}/{character}"
 
-    filename = f"{name}-{id}.{extension}"
+    filename = f"{name}-{id}-{character}.{extension}"
     filepath = f"{parent_path}/{filename}"
 
     pathlib.Path(parent_path).mkdir(parents=True, exist_ok=True)

@@ -2,7 +2,7 @@ import os
 import cv2
 
 from lib.crops.utils import write
-from lib.crops.data.consonant import positions
+from lib.crops.data.consonants import positions
 
 consonants_path = 'datasets/light_weight/consonants'
 destination_path = 'datasets/cropped/consonants'
