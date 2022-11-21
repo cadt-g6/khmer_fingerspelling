@@ -1,1 +1,3 @@
-import lib.crops.consonants
+from lib.crops.consonants import execute
+
+execute()
