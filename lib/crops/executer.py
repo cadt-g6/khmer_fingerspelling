@@ -55,7 +55,7 @@ def execute(
                         height_end=height_end,
                         width_start=width_start,
                         width_end=width_end,
-                        destination_path=destination_path,
+                        destination_path=destination_path + "/" + type,
                         character=character,
                         variant=variant,
                         image=image,

@@ -6,7 +6,7 @@ from lib.crops.data.consonants import positions as cpositions
 from lib.crops.executer import execute
 
 dataset_path = 'datasets/light_weight'
-destination_path = 'datasets/cropped/consonants'
+destination_path = 'datasets/cropped'
 
 # height_start_add, height_end_add
 # width_start_add, width_end_add
@@ -36,7 +36,7 @@ execute(
     destination_path=destination_path,
     positions=center_positions,
     only_run=[
-        "consonants/tho2",
+        # "consonants/tho2",
         # "independent_vowels/ae"
         # "stack_consonants/stack_ba"
         # "sub_vowels/asda",
