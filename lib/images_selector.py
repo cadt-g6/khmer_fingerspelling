@@ -18,12 +18,13 @@ class ImagesSelector:
             for group_key in group.keys():
                 variants: list = group[group_key]
 
-                item1 = variants[0]
+                # item1 = variants[0]
                 item2 = variants[len(variants) // 2]
-                item3 = variants[len(variants) - 1]
+                # item3 = variants[len(variants) - 1]
 
-                cleaned_groups[key][group_key] = [
-                    item1, item2, item3]
+                # cleaned_groups[key][group_key] = [
+                #     item1, item2, item3]
+                cleaned_groups[key][group_key] = [item2]
 
         return cleaned_groups
 
