@@ -3,3 +3,5 @@
 *.pb
 *.pyc
 *.zip
+
+saved_models
